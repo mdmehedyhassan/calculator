@@ -1,6 +1,7 @@
 body{
-    background-color: #da97d4;
+    background-color: #fdcbcb;
     text-align: center;
+    margin: 50px auto; 
 }
 .small-ball{
     height: 28px;
