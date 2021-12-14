@@ -1,0 +1,58 @@
+body{
+    background-color: #ffffff;
+    text-align: center;
+}
+.small-ball{
+    height: 28px;
+    border-radius: 50%;
+}
+#main-div{
+    border-radius: 10px;
+    width: 300px;
+    height: 445px;
+    background-color: #6f6f6f;
+    box-shadow: 10px 10px 5px black;
+}
+#top-header{
+    height: 28px;
+    background-color: #383837;
+    border-radius: 10px 10px 0px 0px;
+}
+#calculator-display{
+    background-color: #b3b3b2;
+    margin: 10px;
+    border-radius: 10px;
+    width: 270px;
+    height: 140px;
+    overflow: hidden;
+}
+#math-display{
+    width: 260px;
+    height: 75px;
+    text-align: end;
+    overflow: auto;
+}
+.button-div{
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+.top-button{
+    color: #ffffff;
+    background-color: #383837;
+}
+.equation-button{
+    color: #ffffff;
+    background-color: #680028;
+}
+.math-button{
+    background-color: #b3b3b2;
+}
+.button-div:active{
+    background-color: #ff3c00;
+    color: #ffffff;
+    box-shadow: 10px 10px 40px #000000;
+}

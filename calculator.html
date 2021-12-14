@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="p-5 m-5">
+    <div style="margin-left: 40%;">
+        <div id="main-div">
+            <div id="top-header">
+                <div class="row">
+                    <div class="col-1 small-ball bg-info ms-3">
+                    </div>
+                    <div class="col-1 small-ball bg-warning ms-1">
+                    </div>
+                    <div class="col-1 small-ball bg-danger ms-1">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex pe-2 align-items-end justify-content-end" id="calculator-display">
+                <div>
+                    <h1 id="math-display"></h1>
+                    <h1 class='text-end' id="math-solution"></h1>
+                </div>
+
+            </div>
+            <div style="margin: 10px">
+                <div class="row">
+                    <div class="col-3">
+                        <div onclick="location.reload()" class="button-div top-button">AC</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="deleteLast()" class="button-div top-button">DEL</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathEqual('sqrt')" class="button-div top-button">√</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathEquation('/')" class="button-div equation-button">÷</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div onclick="mathNumber('7')" class="button-div math-button">7</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathNumber('8')" class="button-div math-button">8</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathNumber('9')" class="button-div math-button">9</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathEquation('*')" class="button-div equation-button">×</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div onclick="mathNumber('4')" class="button-div math-button">4</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathNumber('5')" class="button-div math-button">5</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathNumber('6')" class="button-div math-button">6</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathEquation('-')" class="button-div equation-button">-</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div onclick="mathNumber('1')" class="button-div math-button">1</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathNumber('2')" class="button-div math-button">2</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathNumber('3')" class="button-div math-button">3</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathEquation('+')" class="button-div equation-button">+</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div onclick="mathNumber('0')" class="button-div math-button">0</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathNumber('.')" class="button-div math-button">.</div>
+                    </div>
+                    <div class="col-3">
+                        <div onclick="mathEqual('equal')" class="button-div equation-button">=</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
