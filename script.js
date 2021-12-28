@@ -7,12 +7,14 @@ function mathNumber(value) {
     }
     const newNumber = numberInput.innerText + value;
     numberInput.innerText = newNumber;
+    new Audio('keyboardPress.mp3').play();
 }
 
 function deleteLast(){
     const numberInput = document.getElementById('math-display');
     const newNumber = numberInput.innerText.slice(0, -1);
     numberInput.innerText = newNumber;
+    new Audio('keyboardPress.mp3').play();
 }
 
 function mathEquation(equation){
@@ -29,7 +31,7 @@ function mathEquation(equation){
     if(lastChar == ''){
         document.getElementById('math-display').innerText = '';
     }
-
+    new Audio('keyboardPress.mp3').play();
 }
 
 function mathEqual(id){
@@ -51,4 +53,6 @@ function mathEqual(id){
         y = y.slice(0, 2);
         document.getElementById('math-solution').innerText = x + '.' + y;
     }
+    new Audio('notification.mp3').play();
 }
+
